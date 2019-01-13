@@ -1,4 +1,7 @@
 pipeline:
+  when:
+    event: [ push ] ## Would run only on a push to master
+    branch: [ Jekyll ] ## Only the master branch can be deployed to production
   build:
     image: ruby
     commands:
