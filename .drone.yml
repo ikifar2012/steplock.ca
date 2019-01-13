@@ -6,3 +6,6 @@ pipeline:
       - gem install jekyll bundler
       - bundle install
       - bundle exec jekyll build
+  when:
+    event: [ push ] ## Would run only on a push to master
+    branch: [ Jekyll ] ## Only the master branch can be deployed to production
