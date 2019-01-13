@@ -2,5 +2,6 @@ pipeline:
   build:
     image: ruby
     commands:
+      - cd Steplock.ca
       - gem install jekyll bundler
       - bundle exec jekyll build
