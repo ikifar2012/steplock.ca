@@ -3,5 +3,4 @@ pipeline:
     image: ruby
     commands:
       - gem install jekyll bundler
-      - npm install -g sass
       - bundle exec jekyll build
